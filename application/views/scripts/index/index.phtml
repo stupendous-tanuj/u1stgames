@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>U1Game | Home</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/default.css">
+
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+ 
+<!-- jQuery 1.7+ -->
+<script src="owl-carousel/jquery-1.9.1.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="owl-carousel/owl.carousel.js"></script>
+
+<script>
+    $(document).ready(function() {
+     
+    $("#owl-example").owlCarousel();
+     
+    });
+</script>
+</head>
+
+<body>
+<div class="container-fluid" style="padding:0;">
+  <div id="top"></div>
+  <div class="container"> 
+    
+    <!---header--------->
+    <header class="header"> 
+      
+      <!---Logo--------->
+      <div class="col-lg-4" style="padding-top:5px;"> <img src="img/logo3.png" width="190" height="50"> </div>
+      
+      <!---Social Icon--------->
+      <div class="col-lg-8">
+        <div class="col-lg-1 pull-right"><a href="#"><img src="img/facebook.png" width="30" height="30"></a></div>
+        <div class="col-lg-1 pull-right"><a href="#"><img src="img/twitter.png" width="30" height="30"></a></div>
+      </div>
+    </header>
+    
+    <!---Menu Bar--------->
+    <div class="row">
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Forums</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Bonus Feeds</a></li>
+          <li><a href="#">Link Exchange</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!---Breadcrumb Menu Bar--------->
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Games</a></li>
+          <li class="active">Games Name</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="search_form">
+        <div class="col-lg-9">
+          <input type="search" placeholder="Search Forums">
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+    <!---- content part------------>
+    
+    <div class="row">
+      <div class="content">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="add"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2" style="text-align:center;">
+            <h2>Top 5 Games This Week</h2>
+          </div>
+        </div>
+        <!----Banner---------->
+	
+        <div class="row">
+          <div class="banner">
+		  <div id="owl-example" class="owl-carousel">
+		  	<?php $datas = $this->datas;
+		  
+     for($i = 0; $i<= count($datas)-1;$i++){ ?>
+            <div class="col-lg-2"> 
+			
+			<img src="<?=$datas[$i]->hdlogo;?>" width="150" height="190">
+			
+			</div>
+     
+	 <?php } ?>
+			</div>
+          </div>
+        </div>
+		
+		
+        
+        <!----Contener---------->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="u1_container">
+              <div class="col-lg-4">
+                <div class="box">
+                  <div class="col-lg-12" style="text-align:center"> <img src="img/The Sims Social.gif" width="100" height="100"/> </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <h4>Game Profiles</h4>
+                  </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <p>Our unique game profiles provide information, tips and tricks for all your favourite games. We will be updating this page with new and unique games regularly, so make sure you check it out.</p>
+                  </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <div class="btn btn-default">Go!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box">
+                  <div class="col-lg-12" style="text-align:center"> <img src="img/The Sims Social.gif" width="100" height="100"/> </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <h4>Bonus Collectors</h4>
+                  </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <p>Tired of trawling through your news feed in search of those all important in game bonuses? We have various collectors to help you automatically collect them or simply gather them on one page so you can easily click on the bonuses you desire.</p>
+                  </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <div class="btn btn-default">Go!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box">
+                  <div class="col-lg-12" style="text-align:center"> <img src="img/The Sims Social.gif" width="100" height="100"/> </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <h4>Forums</h4>
+                  </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <p>Whether you're stuck on that difficult level and need help or just want to talk to new friends who play your favourite game, U1stGames' forums is the place for you. Find insightful and interesting conversational topics here.</p>
+                  </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <div class="btn btn-default">Go!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box">
+                  <div class="col-lg-12" style="text-align:center"> <img src="img/The Sims Social.gif" width="100" height="100"/> </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <h4>Link Exchange</h4>
+                  </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <p>Used up all your bonuses but still need more? Link Exchange is where we keep all the free bonuses donated by our users, giving you that extra edge when you require that extra boost to level up.</p>
+                  </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <div class="btn btn-default">Go!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box">
+                  <div class="col-lg-12" style="text-align:center"> <img src="img/The Sims Social.gif" width="100" height="100"/> </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <h4>Chat</h4>
+                  </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <p>Chat we're all about uniting gamers because we know how frustrating it is when you just need to ask someone a quick question so that you can get through that pesky obstacle. Come visit our live chat and connect to u1stGamers from around the world.</p>
+                  </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <div class="btn btn-default">Go!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box">
+                  <div class="col-lg-12" style="text-align:center"> <img src="img/The Sims Social.gif" width="100" height="100"/> </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <h4>My Profile</h4>
+                  </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <p>Create your very own gamer profile and let all U1stGamers know what you're about. Here, you can post about your favourite games, show everyone your achievements and let friends post on your wall.</p>
+                  </div>
+                  <div class="col-lg-12" style="text-align:center">
+                    <div class="btn btn-default">Go!</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-------------footer----------->
+    <div class="row">
+      <footer class="footer">
+        <div class="sub_footer">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Thanks</a></li>
+            <li><a href="#">Webmaster</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+</body>
+</html>
