@@ -6,14 +6,10 @@ class GamesController extends Zend_Controller_Action
 {
   public function indexAction()
   {
-    $params = array('host'		=>'localhost',
-                'username'	=>'root',
-				'password'  =>'',
-				'dbname'	=>'u1stxen'
-               );
-$DB = new Zend_Db_Adapter_Pdo_Mysql($params);
    
-$DB->setFetchMode(Zend_Db::FETCH_OBJ);
+   
+$registry = Zend_Registry::getInstance();  
+$DB = $registry['DB'];
 
 $sql = "SELECT gameid, logo, gamename FROM games";
 $games = $DB->fetchAll($sql);
