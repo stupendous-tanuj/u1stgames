@@ -1,109 +1,45 @@
 <?php
 $imgbaseUrl = $this->baseUrl().'/img/';
 $baseUrl = $this->baseUrl();
-?>
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>U1stGame | Leader Board</title>
-<link href="<?php echo $baseUrl . '/css/bootstrap.min.css'; ?>" media="all" rel="stylesheet" type="text/css" />
-<link href="<?php echo $baseUrl . '/css/bootstrap-theme.min.css'; ?>" media="all" rel="stylesheet" type="text/css" />
-<link href="<?php echo $baseUrl . '/css/default.css'; ?>" media="all" rel="stylesheet" type="text/css" />
-<script src="<?php echo $baseUrl . '/owl-carousel/jquery-1.9.1.min.js';?>"></script>
-<script src="<?php echo $baseUrl . '/js/jquery.masonry.min.js';?>"></script>
-<script src="<?php echo $baseUrl . '/js/jquery.infinitescroll.min.js';?>"></script>
 
-<script>
-  $(function(){
- 
-    var $container = $('#first);
- document.write($container);
-    $container.imagesLoaded(function(){
-      $container.masonry({
-        itemSelector: '.second',
-        columnWidth: 40o
-      });
-    });
- 
-    $container.infinitescroll({
-      navSelector  : '#page-nav',    // selector for the paged navigation
-      nextSelector : '#page-nav a',  // selector for the NEXT link (to page 2)
-      itemSelector : '.second',     // selector for all items you'll retrieve
-      loading: {
-          finishedMsg: 'No more pages to load.',
-          img: 'http://i.imgur.com/6RMhx.gif'
-        }
-      },
-      // trigger Masonry as a callback
-      function( newElements ) {
-        // hide new items while they are loading
-        var $newElems = $( newElements ).css({ opacity: 0 });
-        // ensure that images load before adding to masonry layout
-        $newElems.imagesLoaded(function(){
-          // show elems now they're ready
-          $newElems.animate({ opacity: 1 });
-          $container.masonry( 'appended', $newElems, true );
-        });
-      }
-    );
-  });
-</script>
+?>
+<!DOCTYPE html>
+<html id="XenForo" dir="LTR" class="Public LoggedIn NoSidebar  Responsive hasJs NoTouch HasDragDrop" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Leader Board | U1stGames</title>
+	
+	
+	<link rel="stylesheet" href="<?php echo $baseUrl .'/css/css_003.css'; ?>">
+	<link rel="stylesheet" href="<?php echo $baseUrl .'/css/css_002.css'; ?>">	
+	<link href="<?php echo $baseUrl . '/css/font-awesome.css'; ?>" rel="stylesheet">
+	<link href="<?php echo $baseUrl . '/css/default.css'; ?>" rel="stylesheet">
+	<link href="<?php echo $baseUrl . '/css/bootstrap.min.css'; ?>" rel="stylesheet">
+	<link href="<?php echo $baseUrl . '/css/css.css'; ?>" rel="stylesheet" type="text/css">
+
+	<script src="<?php echo $baseUrl . '/js/jquery-1.js'; ?>"></script>	
+	<script src="<?php echo $baseUrl . '/js/xenforo.js'; ?>"></script>
+	<script src="<?php echo $baseUrl . '/js/quick_reply_profile.js'; ?>"></script>
 
 </head>
 
+<body data-twttr-rendered="true">
 
-<body>
-<div class="container-fluid" style="padding:0;">
-  <div id="top"></div>
-  <div class="container"> 
-    
-    <!---header--------->
-    <header class="header"> 
-      
-      <!---Logo--------->
-      <div class="col-lg-4" style="padding-top:5px;"> <img src=<?php echo $imgbaseUrl . 'logo3.png'?> width="190" height="50"> </div>
-      
-      <!---Social Icon--------->
-      <div class="col-lg-8">
-        <div class="col-lg-1 pull-right"><a href="#"><img src=<?php echo $imgbaseUrl .'facebook.png'?> width="30" height="30"></a></div>
-        <div class="col-lg-1 pull-right"><a href="#"><img src=<?php echo $imgbaseUrl .'twitter.png'?> width="30" height="30"></a></div>
-      </div>
-    </header>
-    
-    <!---Menu Bar--------->
-    <div class="row">
-      <nav class="menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Form</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Games</a></li>
-          <li><a href="#">Bonus Feeds</a></li>
-          <li><a href="#">Link Exchange</a></li>
-        </ul>
-      </nav>
-    </div>
-     <!---Breadcrumb Menu Bar--------->
-    <div class="row">
-      <div class="col-lg-12">
-        <ul class="breadcrumb">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Games</a></li>
-          <li class="active">Games Name</li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="search_form">
-        <div class="col-lg-11">
-          <input type="search" placeholder="Search Forums">
-        </div>
-        <div class="col-lg-1">
-          <button type="submit" class="btn btn-default pull-left" style="margin:10px; height:30px; line-height:15px;">Go</button>
-        </div>
-      </div>
-    </div>
+<div class="topHelper"></div>
+<div id="headerMover">
+	<div id="headerProxy"></div>
+
+<div id="content" class="member_view">
+	<div class="pageWidth">
+		<div class="pageContent">
+			<!-- main content area -->
+		
+		<?php include '/include/breadcrumbtop.php';?>
+
     
     <!---- content part------------> 
     <!----Right content part------------>
@@ -111,28 +47,15 @@ $baseUrl = $this->baseUrl();
       <div class="col-lg-8" style="padding:0px;">
         <div class="right_content"> 
           
-          <!-------breadcrumbs--------->
-          <div class="row">
-            <div class="breadcrumbs"></div>
-          </div>
+
+          
           <!----Add Part------------>
           <div class="add"> <img src="#" width="100%" height="100%" title="add box" class="img-rounded"> </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <form class="form-horizontal">
-                <div class="col-lg-1" style="height:50px; line-height:50px">Search</div>
-                <input type="search" class="col-lg-9" placeholder="search games">
-                <div class="col-lg-1">
-                  <button type="submit" class="btn btn-default pull-left" style="margin:10px; height:30px; line-height:15px;">go</button>
-                </div>
-    
-              </form>
-            </div>
+          <div class="row" style="height:50px; line-height:50px">
+            
           </div>
           <!----right images content part------------>
-		  
-		  
-		  <div id="first"> 
+           <div id="first"> 
 		  <?php
 function ordinal($num) {
     $ones = $num % 10;
@@ -188,11 +111,8 @@ function ordinal($num) {
 		  
   <?php } ?>
   </div>
-          
-		  <nav id="page-nav">
-  <a href="http://localhost/repo/u1stgames/web_root/leaderboard/fetch/"></a>
-</nav>
-        
+  
+  
         </div>
       </div>
       
@@ -218,23 +138,22 @@ function ordinal($num) {
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-------------footer----------->
-    <div class="row">
-      <footer class="footer">
-        <div class="sub_footer">
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Developers</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Thanks</a></li>
-            <li><a href="#">Webmaster</a></li>
-          </ul>
+      
+
+     
+		 </div>
         </div>
-      </footer>
-    </div>
-  </div>
+<?php include '/include/breadcrumbottom.php';?>
+			
+						
+		</div>
+	</div>
 </div>
-</body>
-</html>
+
+<?php include '/include/header.php';?>
+</div>
+<?php include '/include/footer.php';?>
+
+			</body>
+			</html>
+

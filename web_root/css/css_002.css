@@ -1,0 +1,712 @@
+@CHARSET "UTF-8";
+
+/* --- fa_socialicons.css --- */
+
+.socialicons
+{
+	float: right;
+	margin-top: 10px;
+}
+.socialicons li
+{
+	display: inline-block;
+}
+.socialicons li a
+{
+	padding: 10px;
+	font-size: 24px;
+	color: rgb(20,20,20);
+}
+.socialicons li a:hover
+{
+	color: rgb(196, 84, 84);
+}
+
+/* --- member_view.css --- */
+
+.profilePage
+{
+	
+}
+
+/* clearfix */ .profilePage { zoom: 1; } .profilePage:after { content: '.'; display: block; height: 0; clear: both; visibility: hidden; }
+
+.profilePage .mast
+{
+	float: left;
+	width: 192px;
+	padding-right: 10px;
+	border-right: 1px solid rgb(239, 239, 239);
+}
+
+.profilePage .mainProfileColumn
+{
+	margin-left: 202px;
+	border-left: 1px solid rgb(239, 239, 239);
+	zoom: 1;
+}
+
+/** ************************ **/
+
+.profilePage .mast .section
+{
+}
+	
+	.profilePage .mast .sectionFooter
+	{
+		border-left: 1px solid rgb(239, 239, 239);
+		border-right: 1px solid rgb(239, 239, 239);
+		text-align: right;
+	}
+
+/** ************************ **/
+
+.profilePage .mast .followBlocks .section
+{
+	margin-bottom: 20px;
+}
+
+.profilePage .mast .followBlocks .primaryContent.avatarHeap
+{
+	border: 1px solid rgb(239, 239, 239);
+	border-top: none;
+}
+
+/** ************************ **/
+
+.profilePage .mast .section.infoBlock
+{
+	padding: 2px;
+margin-bottom: 20px;
+border: 1px solid rgb(239, 239, 239);
+-webkit-border-radius: 0px; -moz-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px;
+
+}
+
+	.profilePage .mast .section.infoBlock .primaryContent,
+	.profilePage .mast .section.infoBlock .secondaryContent
+	{
+		overflow: hidden;
+	}
+
+	.profilePage .mast .section.infoBlock .primaryContent:last-child,
+	.profilePage .mast .section.infoBlock .secondaryContent:last-child
+	{
+		border: none;
+	}
+
+	.profilePage .infoBlock dt
+	{
+		font-size: 11px;
+
+	}
+
+	.profilePage .infoBlock dd
+	{
+		font-size: 11px;
+
+	}
+
+	.profilePage .infoBlock .dob,
+	.profilePage .infoBlock .age
+	{
+		white-space: nowrap;
+	}
+	
+	.profilePage .mast .shareControl
+	{
+		margin-top: 10px;
+	}
+	
+	.profilePage .mast .sharePage iframe
+	{
+		width: 160px;
+		height: 20px;
+	}
+
+/* ***************************** */
+/** [ Items...........(count) ] **/
+
+.textWithCount
+{
+	overflow: hidden; zoom: 1;
+}
+
+	.textWithCount .text
+	{
+		float: left;
+	}
+
+	.textWithCount .count
+	{
+		float: right;
+	}
+	
+		.textWithCount.subHeading .text
+		{		
+			color: rgb(55, 55, 55);
+		}
+		
+		.textWithCount.subHeading .count
+		{
+			margin: -3px 0;
+			padding: 2px 6px;
+			-webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px;
+			border: 1px solid rgb(203, 203, 203);
+			background-color: rgb(232, 232, 232);
+			color: rgb(55, 55, 55);
+		}
+
+/** ************************ **/
+
+.profilePage .primaryUserBlock
+{
+	border-top: 1px solid rgb(239, 239, 239);
+}
+
+.profilePage .primaryUserBlock .mainText
+{
+	padding-bottom: 36px;
+}
+
+	.profilePage .primaryUserBlock .followBlock
+	{
+		float: right;
+		font-size: 11px;
+		text-align: right;
+	}
+	
+		.profilePage .primaryUserBlock .followBlock li
+		{
+			float: right;
+			margin-left: 10px;
+		}
+	
+		.profilePage .primaryUserBlock .followBlock .muted
+		{
+			font-size: 10px;
+			clear: both;
+		}
+
+	.profilePage .primaryUserBlock h1
+	{
+		font-size: 18pt;
+
+	}
+
+	.profilePage .primaryUserBlock .userBlurb
+	{
+		margin-bottom: 5px;
+	}
+	
+	.profilePage .primaryUserBlock .userBanners .userBanner
+	{
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+	
+	.profilePage .primaryUserBlock .userStatus
+	{
+		font-size: 15px;
+font-family: 'Open Sans', sans-serif;
+line-height: 1.7;
+
+		
+		font-style: italic;
+font-size: 9pt;
+padding-top: 5px;
+
+	}
+	
+	.profilePage .primaryUserBlock .lastActivity
+	{
+		font-size: 11px;
+padding-top: 5px;
+margin-top: 5px;
+border-top: 1px solid rgb(239, 239, 239);
+
+	}
+	
+		.profilePage .primaryUserBlock .userStatus .DateTime
+		{
+			color: rgb(113, 113, 113);
+			font-size: 10px;
+		}
+	
+	.profilePage .primaryUserBlock .primaryContent,
+	.profilePage .primaryUserBlock .secondaryContent
+	{
+		padding-left: 20px;
+		border: none;
+	}
+
+.profilePage .tabs.mainTabs
+{
+	padding: 0 20px;	
+	margin-top: -23px;
+	min-height: 23px;
+	height: auto;
+	position: relative; /* ensure separate stacking context from .mainText */
+	background: rgb(255, 255, 255);
+}
+
+	.profilePage .tabs.mainTabs li a
+	{
+		padding-left: 22px;
+		padding-right: 22px;		
+		line-height: 22px;
+		height: 22px;
+		
+		font-weight: bold;
+	
+	}
+	
+		.profilePage .tabs.mainTabs li a:hover
+		{
+			background-color: rgb(222, 222, 222);
+
+		}
+	
+	.profilePage .tabs.mainTabs li.active a
+	{
+		background-color: rgb(252, 252, 255);
+
+	}
+
+.profilePage .profileContent
+{
+	margin-left: 20px;
+}
+
+	.profilePage .profilePoster
+	{
+		padding-bottom: 10px;
+		position: relative;
+	}
+	
+		.profilePage .profilePoster textarea
+		{
+			height: 54px;
+			width: 100%;
+			-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;
+			*width: 98%;
+			resize: vertical;
+		}
+		
+		.profilePage .profilePoster .submitUnit
+		{
+			margin-top: 5px;
+			text-align: right;
+		}
+
+.profilePage .profileContent .InlineMod
+{
+	overflow: hidden; zoom: 1;
+	
+}
+
+.contactInfo,
+.aboutPairs
+{
+	max-width: 500px;
+}
+
+	.contactInfo dl,
+	.aboutPairs dl
+	{
+		margin-bottom: 5px;
+	}
+	
+	.contactInfo dt,
+	.aboutPairs dt
+	{
+		width: 30%;
+	}
+	
+	.contactInfo dd,
+	.aboutPairs dd
+	{
+		width: 68%;
+	}
+
+.aboutPairs
+{
+	margin-bottom: 1em;
+}
+
+.signature
+{
+	font-size: 15px;
+font-family: 'Open Sans', sans-serif;
+line-height: 1.7;
+
+	
+	/*border: 1px solid rgb(239, 239, 239);
+	padding: 10px;*/
+}
+
+.profilePage .eventList li
+{
+	padding-left: 0;
+}
+
+.profilePage .eventList:first-of-type li:first-child
+{
+	padding-top: 0;
+}
+
+.profilePage .searchResult:first-child
+{
+	margin-top: -5px;
+}
+
+
+@media (max-width:610px)
+{
+	.Responsive .profilePage
+	{
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;
+	}
+
+	.Responsive .profilePage .mast
+	{
+		display: table-footer-group;
+		
+		float: none;
+		padding-right: 0;
+		border-right: none;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+
+	.Responsive .profilePage .avatarScaler
+	{
+		text-align: center;
+	}
+
+	.Responsive .profilePage .mast .sharePage
+	{
+		display: none;
+	}
+
+	.Responsive .profilePage .profileContent
+	{
+		margin-left: 0;
+	}
+
+	.Responsive .profilePage .mainProfileColumn
+	{
+		display: table-header-group;
+
+		margin-left: 0;
+		border-left: none;
+		border-bottom: 1px solid rgb(222, 222, 222);
+		padding-bottom: 10px;
+	}
+
+	.Responsive .profilePage .mast > *
+	{
+		max-width: 192px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (max-width:480px)
+{
+	.Responsive .warningList .warningExpiry
+	{
+		display: none;
+	}
+}
+
+@media (max-width:340px)
+{
+	.Responsive .profilePage .mast > *
+	{
+		max-width: none;
+	}
+}
+
+
+/* --- message_simple.css --- */
+
+/* inline mod stuff */
+
+.messageSimpleList .messageSimple.InlineModChecked
+{
+	background-color: rgb(255, 255, 200);
+
+}
+
+/* note that .messageSimple needs to be enclosed in a .messageSimpleList container */
+
+.messageSimpleList.topBorder
+{
+	border-top: 1px rgb(239, 239, 239) solid;
+	padding-bottom: 5px;
+}
+
+.messageSimple
+{
+	overflow: hidden; zoom: 1;
+
+	padding: 0;
+	padding-bottom: 10px;
+	
+	margin: 10px 0;
+}
+
+.messageSimpleList.contained .messageSimple
+{
+	padding: 10px;
+	margin: 0;
+}
+
+.messageSimple .avatar
+{
+	float: left;
+	font-size: 0;
+}
+
+.messageSimple .messageInfo
+{
+	margin-left: 65px;
+}
+
+	.messageSimple .messageContent
+	{
+		min-height: 35px;
+	}
+
+		.messageSimple .messageContent article,
+		.messageSimple .messageContent blockquote
+		{
+			display: inline;
+		}
+
+	.messageSimple .poster
+	{
+		font-weight: bold;
+	}
+
+.messageSimple .messageMeta
+{
+	overflow: hidden; zoom: 1;
+	font-size: 11px;
+	line-height: 14px;
+	padding-top: 5px;
+}
+
+	.messageSimple .privateControls
+	{
+		float: left;
+	}
+
+		.messageSimple .privateControls .item
+		{
+			float: left;
+			margin-right: 10px;
+		}
+
+	.messageSimple .publicControls
+	{
+		float: right;
+	}
+
+		.messageSimple .publicControls .item
+		{
+			float: left;
+			margin-left: 10px;
+		}
+
+	.messageNotices li
+	{
+		font-size: 12px;
+background-color: rgb(203, 203, 203);
+padding: 5px;
+margin: 10px 0;
+border: 1px solid rgb(203, 203, 203);
+-webkit-border-radius: 0px; -moz-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px;
+line-height: 16px;
+
+	}
+	
+		.messageNotices .icon
+		{
+			float: right;
+			width: 16px;
+			height: 16px;
+			font-size: 18px;
+		}
+	
+
+
+
+/* deleted / ignored message placeholder */
+
+.messageSimpleList .messageSimple.placeholder
+{
+	border: none;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.messageSimpleList .placeholder .placeholderContent
+{
+	overflow: hidden; zoom: 1;
+	border: 1px solid rgb(239, 239, 239);
+	background: rgb(245, 245, 245) none repeat-x top;
+	padding: 5px;
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px;
+	color: rgb(88, 88, 88);
+	font-size: 11px;
+}
+
+	.messageSimpleList .placeholder a.avatar
+	{
+		float: left;
+		margin-right: 5px;
+		display: block;
+	}
+		
+		.messageSimpleList .placeholder a.avatar img
+		{
+			width: 24px;
+			height: 24px;
+			display: block;
+		}
+	
+	.messageSimpleList .placeholder .privateControls
+	{
+		margin-top: 2px;
+	}
+	
+/* likes and comments */
+
+.messageSimple .messageResponse
+{
+	margin-top: 10px;
+	font-size: 11px;
+	max-width: 400px;
+	_width: 400px;
+}
+
+.messageSimple .comment,
+.messageSimple .secondaryContent
+{
+	overflow: hidden; zoom: 1;
+	margin-top: 2px;
+	padding: 5px;
+}
+
+	.messageSimple .comment .avatar img
+	{
+		float: left;
+		width: 32px;
+		height: 32px;
+	}
+
+	.messageSimple .comment .commentInfo,
+	.messageSimple .comment .elements
+	{
+		margin-left: 42px;
+	}
+
+	.messageSimple .comment .commentContent
+	{
+		min-height: 19px;
+	}
+
+		.messageSimple .commentContent article,
+		.messageSimple .commentContent blockquote
+		{
+			display: inline;
+		}
+		
+	.messageSimple .comment .commentControls
+	{
+		margin-top: 5px;
+	}
+	
+		.messageSimple .comment .commentControls .item
+		{
+			margin-left: 10px;
+		}
+			
+
+.messageSimple .comment textarea
+{
+	display: block;
+	width: 100%;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;
+	*width: 96%;
+	max-height: 100px;
+	resize: vertical;
+}
+
+.messageSimple .comment .submit
+{
+	margin-top: 5px;
+	text-align: right;
+}
+
+
+@media (max-width:480px)
+{
+	.Responsive .messageSimple > .avatar img
+	{
+		width: 32px;
+		height: 32px;
+	}
+
+	.Responsive .messageSimple .messageInfo
+	{
+		margin-left: 46px;
+	}
+}
+
+
+/* --- sidebar_share_page.css --- */
+
+.sidebar .sharePage .shareControl
+{
+	margin-top: 10px;
+	min-height: 23px;
+}
+
+.sidebar .sharePage iframe
+{
+	width: 200px;
+	height: 20px;
+}
+
+.sidebar .sharePage iframe.fb_ltr
+{
+	_width: 200px !important;
+}
+
+.sidebar .sharePage .facebookLike iframe
+{
+	z-index: 52;
+}
+
+.mast .sharePage .secondaryContent
+{
+	overflow: visible !important;
+}
+
+
+
+
+@media (max-width:480px)
+{
+	.Responsive .sidebar .sharePage
+	{
+		display: none;
+	}
+}
+
