@@ -4,6 +4,7 @@ require_once 'Zend/Db/Adapter/Pdo/Mysql.php';
 require_once 'Zend/Session/Namespace.php';
 require_once 'Zend/Auth.php';
 require_once 'Zend/Auth/Adapter/DbTable.php';
+require_once 'Zend/Registry.php';
 
 class LeaderboardController extends Zend_Controller_Action
 {

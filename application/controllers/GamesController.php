@@ -1,6 +1,7 @@
 <?php
 require_once 'Zend/Controller/Action.php';
 require_once 'Zend/Db/Adapter/Pdo/Mysql.php';
+require_once 'Zend/Registry.php';
 
 class GamesController extends Zend_Controller_Action
 {
