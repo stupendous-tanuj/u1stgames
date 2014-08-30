@@ -2870,7 +2870,7 @@ input.button.primary.disabled,
 a.button.primary.disabled,
 html .buttonProxy .button.disabled
 {
-	color: rgb(86, 86, 86);
+	color: #000;
 background-color: #EEE;
 
 }
